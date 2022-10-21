@@ -5,8 +5,13 @@
 * Pham Nhut Huy
 * Nguyen Tuan Anh
 * Hy Truong Son
+## Main components
+1. [Pre-training](#pretraining)
+2. [Model](#videberta)
+3. [Fine-tuning](#finetuning)
+--4. [Usage](#vncorenlp)
 
-## Pre-training
+## <a name="pretraining"></a> Pre-training
 ## Code architecture
 1. bash: bash scripts to run the pipeline
 2. config: model_config (json files)
@@ -25,8 +30,8 @@
 - Load datasets
 - Load tokenizers
 - Pre-train DeBERTa-v3
-
-## Fine-tuning
+## <a name="videberta"></a> Model
+## <a name="finetuning"></a> Fine-tuning
 ### Code architecture
 1. POS tagging and NER (POS_NER)
 2. Question Answering (QA and QA2)
