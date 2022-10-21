@@ -1,0 +1,196 @@
+2022-09-25 16:25:37,942 INFO    StreamThr :1864917 [internal.py:wandb_internal():90] W&B internal server running at pid: 1864917, started at: 2022-09-25 16:25:37.939126
+2022-09-25 16:25:37,951 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: status
+2022-09-25 16:25:37,951 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: status
+2022-09-25 16:25:37,953 DEBUG   SenderThread:1864917 [sender.py:send():302] send: header
+2022-09-25 16:25:37,953 INFO    WriterThread:1864917 [datastore.py:open_for_write():75] open: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/run-12iefodg.wandb
+2022-09-25 16:25:38,095 DEBUG   SenderThread:1864917 [sender.py:send():302] send: run
+2022-09-25 16:25:38,931 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: check_version
+2022-09-25 16:25:38,937 INFO    SenderThread:1864917 [dir_watcher.py:__init__():216] watching files in: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files
+2022-09-25 16:25:38,937 INFO    SenderThread:1864917 [sender.py:_start_run_threads():913] run started: 12iefodg with start time 1664097937.928791
+2022-09-25 16:25:38,937 DEBUG   SenderThread:1864917 [sender.py:send():302] send: summary
+2022-09-25 16:25:38,939 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-25 16:25:38,939 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: check_version
+2022-09-25 16:25:39,337 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: run_start
+2022-09-25 16:25:39,350 DEBUG   HandlerThread:1864917 [meta.py:__init__():35] meta init
+2022-09-25 16:25:39,350 DEBUG   HandlerThread:1864917 [meta.py:__init__():50] meta init done
+2022-09-25 16:25:39,351 DEBUG   HandlerThread:1864917 [meta.py:probe():216] probe
+2022-09-25 16:25:39,358 DEBUG   HandlerThread:1864917 [meta.py:_setup_git():206] setup git
+2022-09-25 16:25:39,380 DEBUG   HandlerThread:1864917 [meta.py:_setup_git():213] setup git done
+2022-09-25 16:25:39,380 DEBUG   HandlerThread:1864917 [meta.py:_save_code():88] save code
+2022-09-25 16:25:39,388 DEBUG   HandlerThread:1864917 [meta.py:_save_code():109] save code done
+2022-09-25 16:25:39,388 DEBUG   HandlerThread:1864917 [meta.py:_save_patches():126] save patches
+2022-09-25 16:25:39,469 DEBUG   HandlerThread:1864917 [meta.py:_save_patches():168] save patches done
+2022-09-25 16:25:39,470 DEBUG   HandlerThread:1864917 [meta.py:_save_pip():54] save pip
+2022-09-25 16:25:39,471 DEBUG   HandlerThread:1864917 [meta.py:_save_pip():68] save pip done
+2022-09-25 16:25:39,471 DEBUG   HandlerThread:1864917 [meta.py:_save_conda():75] save conda
+2022-09-25 16:25:39,940 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/diff.patch
+2022-09-25 16:25:39,940 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/requirements.txt
+2022-09-25 16:25:39,940 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/conda-environment.yaml
+2022-09-25 16:25:39,940 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-summary.json
+2022-09-25 16:25:39,940 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/code/fine-tuning/source/token-classification.py
+2022-09-25 16:25:39,941 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/code
+2022-09-25 16:25:39,941 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/code/fine-tuning
+2022-09-25 16:25:39,941 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/code/fine-tuning/source
+2022-09-25 16:25:43,591 DEBUG   HandlerThread:1864917 [meta.py:_save_conda():85] save conda done
+2022-09-25 16:25:43,591 DEBUG   HandlerThread:1864917 [meta.py:probe():254] probe done
+2022-09-25 16:25:43,669 DEBUG   SenderThread:1864917 [sender.py:send():302] send: files
+2022-09-25 16:25:43,670 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-09-25 16:25:43,670 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file code/fine-tuning/source/token-classification.py with policy now
+2022-09-25 16:25:43,672 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file diff.patch with policy now
+2022-09-25 16:25:43,681 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-25 16:25:43,681 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: stop_status
+2022-09-25 16:25:43,943 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/conda-environment.yaml
+2022-09-25 16:25:43,943 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-metadata.json
+2022-09-25 16:25:44,382 DEBUG   SenderThread:1864917 [sender.py:send():302] send: telemetry
+2022-09-25 16:25:44,382 DEBUG   SenderThread:1864917 [sender.py:send():302] send: config
+2022-09-25 16:25:44,383 DEBUG   SenderThread:1864917 [sender.py:send():302] send: metric
+2022-09-25 16:25:44,384 DEBUG   SenderThread:1864917 [sender.py:send():302] send: telemetry
+2022-09-25 16:25:44,384 DEBUG   SenderThread:1864917 [sender.py:send():302] send: metric
+2022-09-25 16:25:44,385 WARNING SenderThread:1864917 [sender.py:send_metric():1112] Seen metric with glob (shouldn't happen)
+2022-09-25 16:25:44,385 DEBUG   SenderThread:1864917 [sender.py:send():302] send: telemetry
+2022-09-25 16:25:44,861 INFO    Thread-16 :1864917 [upload_job.py:push():138] Uploaded file /tmp/tmpup5wu59fwandb/3ovir5lb-wandb-metadata.json
+2022-09-25 16:25:44,872 INFO    Thread-17 :1864917 [upload_job.py:push():138] Uploaded file /tmp/tmpup5wu59fwandb/3luu8f7w-code/fine-tuning/source/token-classification.py
+2022-09-25 16:25:44,944 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_created():275] file/dir created: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:25:45,165 INFO    Thread-18 :1864917 [upload_job.py:push():138] Uploaded file /tmp/tmpup5wu59fwandb/1wbqoqts-diff.patch
+2022-09-25 16:25:46,945 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:25:54,950 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:25:56,951 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:25:58,953 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:25:59,389 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: stop_status
+2022-09-25 16:25:59,389 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: stop_status
+2022-09-25 16:26:00,954 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:26:02,956 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:26:04,192 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:04,192 DEBUG   SenderThread:1864917 [sender.py:send():302] send: exit
+2022-09-25 16:26:04,192 INFO    SenderThread:1864917 [sender.py:send_exit():438] handling exit code: 255
+2022-09-25 16:26:04,193 INFO    SenderThread:1864917 [sender.py:send_exit():440] handling runtime: 24
+2022-09-25 16:26:04,193 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-25 16:26:04,193 INFO    SenderThread:1864917 [sender.py:send_exit():446] send defer
+2022-09-25 16:26:04,194 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:04,195 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,195 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 0
+2022-09-25 16:26:04,196 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,196 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-09-25 16:26:04,196 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 1
+2022-09-25 16:26:04,196 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,197 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 1
+2022-09-25 16:26:04,291 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,291 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-09-25 16:26:04,291 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 2
+2022-09-25 16:26:04,291 DEBUG   SenderThread:1864917 [sender.py:send():302] send: stats
+2022-09-25 16:26:04,292 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,292 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 2
+2022-09-25 16:26:04,293 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,293 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-09-25 16:26:04,293 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 3
+2022-09-25 16:26:04,293 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,293 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 3
+2022-09-25 16:26:04,293 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,294 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-09-25 16:26:04,294 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 4
+2022-09-25 16:26:04,294 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,294 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 4
+2022-09-25 16:26:04,294 DEBUG   SenderThread:1864917 [sender.py:send():302] send: summary
+2022-09-25 16:26:04,295 INFO    SenderThread:1864917 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-09-25 16:26:04,295 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,295 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-09-25 16:26:04,295 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 5
+2022-09-25 16:26:04,296 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:04,296 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:04,296 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:04,296 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 5
+2022-09-25 16:26:04,297 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:04,297 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-09-25 16:26:04,407 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:04,958 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:26:04,958 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-summary.json
+2022-09-25 16:26:05,577 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 6
+2022-09-25 16:26:05,577 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:05,578 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:05,578 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 6
+2022-09-25 16:26:05,578 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:05,578 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-09-25 16:26:05,680 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:05,958 INFO    Thread-12 :1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/config.yaml
+2022-09-25 16:26:06,448 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 7
+2022-09-25 16:26:06,448 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:06,450 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:06,450 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 7
+2022-09-25 16:26:06,450 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:06,450 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-09-25 16:26:06,450 INFO    SenderThread:1864917 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-09-25 16:26:06,550 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:06,961 INFO    SenderThread:1864917 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:26:06,961 INFO    SenderThread:1864917 [dir_watcher.py:finish():392] scan: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files
+2022-09-25 16:26:06,962 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/diff.patch diff.patch
+2022-09-25 16:26:06,962 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/config.yaml config.yaml
+2022-09-25 16:26:06,962 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/conda-environment.yaml conda-environment.yaml
+2022-09-25 16:26:06,963 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log output.log
+2022-09-25 16:26:06,963 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-summary.json wandb-summary.json
+2022-09-25 16:26:06,963 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/requirements.txt requirements.txt
+2022-09-25 16:26:06,964 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-metadata.json wandb-metadata.json
+2022-09-25 16:26:06,964 INFO    SenderThread:1864917 [dir_watcher.py:finish():406] scan save: /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/code/fine-tuning/source/token-classification.py code/fine-tuning/source/token-classification.py
+2022-09-25 16:26:06,964 INFO    SenderThread:1864917 [sender.py:transition_state():459] send defer: 8
+2022-09-25 16:26:06,965 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:06,970 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: defer
+2022-09-25 16:26:06,971 INFO    HandlerThread:1864917 [handler.py:handle_request_defer():164] handle defer: 8
+2022-09-25 16:26:06,972 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: defer
+2022-09-25 16:26:06,972 INFO    SenderThread:1864917 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-09-25 16:26:06,972 INFO    SenderThread:1864917 [file_pusher.py:finish():171] shutting down file pusher
+2022-09-25 16:26:07,073 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,073 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,175 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,175 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,277 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,277 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,379 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,380 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,481 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,482 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,591 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,591 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,693 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,694 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,796 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,796 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:07,898 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:07,899 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,002 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,002 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,046 INFO    Thread-21 :1864917 [upload_job.py:push():138] Uploaded file /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/output.log
+2022-09-25 16:26:08,050 INFO    Thread-20 :1864917 [upload_job.py:push():138] Uploaded file /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/conda-environment.yaml
+2022-09-25 16:26:08,104 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,105 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,207 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,207 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,261 INFO    Thread-23 :1864917 [upload_job.py:push():138] Uploaded file /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/requirements.txt
+2022-09-25 16:26:08,309 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,309 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,353 INFO    Thread-22 :1864917 [upload_job.py:push():138] Uploaded file /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/bash/wandb/run-20220925_162537-12iefodg/files/wandb-summary.json
+2022-09-25 16:26:08,411 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,412 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,514 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,514 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,616 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,617 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,719 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,720 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,825 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,825 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:08,928 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:08,928 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,031 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,031 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,133 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,134 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,240 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,240 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,343 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,344 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,446 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,447 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,550 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,550 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,653 DEBUG   HandlerThread:1864917 [handler.py:handle_request():141] handle_request: poll_exit
+2022-09-25 16:26:09,654 DEBUG   SenderThread:1864917 [sender.py:send_request():316] send_request: poll_exit
+2022-09-25 16:26:09,781 INFO    MainThread:1864917 [internal.py:handle_exit():80] Internal process exited

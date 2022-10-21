@@ -1,0 +1,380 @@
+
+  0%|                                                                                                                                                                                          | 0/2634 [00:00<?, ?it/s][WARNING|logging.py:281] 2022-10-17 16:46:27,179 >> You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 19%|█████████████████████████████████▍                                                                                                                                              | 500/2634 [01:33<09:19,  3.81it/s][INFO|trainer.py:2669] 2022-10-17 16:48:00,633 >> Saving model checkpoint to ../tmp/ner_deberta/checkpoint-500
+[INFO|configuration_utils.py:442] 2022-10-17 16:48:00,635 >> Configuration saved in ../tmp/ner_deberta/checkpoint-500/config.json
+{'loss': 0.1689, 'learning_rate': 4.050873196659074e-05, 'epoch': 0.57}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:48:01,533 >> Model weights saved in ../tmp/ner_deberta/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:48:01,535 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:48:01,536 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-500/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 38%|██████████████████████████████████████████████████████████████████▍                                                                                                            | 1000/2634 [03:19<07:04,  3.85it/s][INFO|trainer.py:2669] 2022-10-17 16:49:46,392 >> Saving model checkpoint to ../tmp/ner_deberta/checkpoint-1000
+[INFO|configuration_utils.py:442] 2022-10-17 16:49:46,393 >> Configuration saved in ../tmp/ner_deberta/checkpoint-1000/config.json
+[INFO|modeling_utils.py:1583] 2022-10-17 16:49:47,045 >> Model weights saved in ../tmp/ner_deberta/checkpoint-1000/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:49:47,046 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-1000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:49:47,046 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-1000/special_tokens_map.json
+{'loss': 0.0564, 'learning_rate': 3.1017463933181475e-05, 'epoch': 1.14}
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 57%|███████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                           | 1500/2634 [05:06<06:33,  2.88it/s][INFO|trainer.py:2669] 2022-10-17 16:51:33,801 >> Saving model checkpoint to ../tmp/ner_deberta/checkpoint-1500
+[INFO|configuration_utils.py:442] 2022-10-17 16:51:33,805 >> Configuration saved in ../tmp/ner_deberta/checkpoint-1500/config.json
+{'loss': 0.0374, 'learning_rate': 2.152619589977221e-05, 'epoch': 1.71}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:51:34,687 >> Model weights saved in ../tmp/ner_deberta/checkpoint-1500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:51:34,689 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-1500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:51:34,689 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-1500/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 76%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                          | 1999/2634 [06:54<02:16,  4.65it/s]
+ 76%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                          | 2000/2634 [06:55<03:49,  2.77it/s][INFO|trainer.py:2669] 2022-10-17 16:53:22,353 >> Saving model checkpoint to ../tmp/ner_deberta/checkpoint-2000
+[INFO|configuration_utils.py:442] 2022-10-17 16:53:22,361 >> Configuration saved in ../tmp/ner_deberta/checkpoint-2000/config.json
+[INFO|modeling_utils.py:1583] 2022-10-17 16:53:23,346 >> Model weights saved in ../tmp/ner_deberta/checkpoint-2000/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:53:23,348 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-2000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:53:23,348 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-2000/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 2499/2634 [08:42<00:26,  5.08it/s]
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████         | 2500/2634 [08:43<00:42,  3.13it/s][INFO|trainer.py:2669] 2022-10-17 16:55:10,492 >> Saving model checkpoint to ../tmp/ner_deberta/checkpoint-2500
+[INFO|configuration_utils.py:442] 2022-10-17 16:55:10,494 >> Configuration saved in ../tmp/ner_deberta/checkpoint-2500/config.json
+[INFO|modeling_utils.py:1583] 2022-10-17 16:55:11,456 >> Model weights saved in ../tmp/ner_deberta/checkpoint-2500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:55:11,458 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-2500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:55:11,458 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-2500/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2634/2634 [09:15<00:00,  5.03it/s][INFO|trainer.py:1873] 2022-10-17 16:55:42,935 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2634/2634 [09:15<00:00,  4.74it/s]
+[INFO|trainer.py:2669] 2022-10-17 16:55:42,938 >> Saving model checkpoint to ../tmp/ner_deberta
+[INFO|configuration_utils.py:442] 2022-10-17 16:55:42,939 >> Configuration saved in ../tmp/ner_deberta/config.json
+[INFO|modeling_utils.py:1583] 2022-10-17 16:55:43,766 >> Model weights saved in ../tmp/ner_deberta/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:55:43,768 >> tokenizer config file saved in ../tmp/ner_deberta/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:55:43,768 >> Special tokens file saved in ../tmp/ner_deberta/special_tokens_map.json
+[INFO|trainer.py:744] 2022-10-17 16:55:44,053 >> The following columns in the evaluation set don't have a corresponding argument in `DebertaV2ForTokenClassification.forward` and have been ignored: pos_tags, id, tokens, chunk_tags, ner_tags. If pos_tags, id, tokens, chunk_tags, ner_tags are not expected by `DebertaV2ForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2920] 2022-10-17 16:55:44,057 >> ***** Running Evaluation *****
+[INFO|trainer.py:2922] 2022-10-17 16:55:44,057 >>   Num examples = 3250
+[INFO|trainer.py:2925] 2022-10-17 16:55:44,057 >>   Batch size = 16
+  2%|████▍                                                                                                                                                                              | 5/204 [00:00<00:13, 14.50it/s]
+{'train_runtime': 562.7769, 'train_samples_per_second': 74.848, 'train_steps_per_second': 4.68, 'train_loss': 0.06035455348551409, 'epoch': 3.0}
+***** train metrics *****
+  epoch                    =        3.0
+  train_loss               =     0.0604
+  train_runtime            = 0:09:22.77
+  train_samples            =      14041
+  train_samples_per_second =     74.848
+  train_steps_per_second   =       4.68
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏| 203/204 [00:15<00:00, 13.27it/s]
+10/17/2022 16:56:00 - INFO - datasets.metric - Removing /home/khuongnd6/.cache/huggingface/metrics/seqeval/default/default_experiment-1-0.arrow
+***** eval metrics *****
+  epoch                   =        3.0
+  eval_accuracy           =     0.9917
+  eval_f1                 =     0.9514
+  eval_loss               =     0.0387
+  eval_precision          =     0.9468
+  eval_recall             =     0.9561
+  eval_runtime            = 0:00:16.82
+  eval_samples            =       3250
+  eval_samples_per_second =    193.219
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 204/204 [00:16<00:00, 12.19it/s]

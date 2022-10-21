@@ -1,0 +1,65 @@
+
+  0%|                                                                                                                                                                                   | 0/2853 [00:00<?, ?it/s][WARNING|logging.py:281] 2022-10-06 23:35:02,703 >> You're using a T5TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4%|██████▎                                                                                                                                                                  | 107/2853 [01:13<25:08,  1.82it/s]Traceback (most recent call last):
+  File "../source/finetune_pos_vit5.py", line 728, in <module>
+    main()
+  File "../source/finetune_pos_vit5.py", line 647, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1521, in train
+    return inner_training_loop(
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1763, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 2499, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 2531, in compute_loss
+    outputs = model(**inputs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/modules/module.py", line 889, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 166, in forward
+    replicas = self.replicate(self.module, self.device_ids[:len(inputs)])
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 171, in replicate
+    return replicate(module, device_ids, not torch.is_grad_enabled())
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/replicate.py", line 91, in replicate
+    param_copies = _broadcast_coalesced_reshape(params, devices, detach)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/replicate.py", line 71, in _broadcast_coalesced_reshape
+    tensor_copies = Broadcast.apply(devices, *tensors)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py", line 23, in forward
+    outputs = comm.broadcast_coalesced(inputs, ctx.target_gpus)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/comm.py", line 58, in broadcast_coalesced
+    return torch._C._broadcast_coalesced(tensors, devices, buffer_size)
+KeyboardInterrupt

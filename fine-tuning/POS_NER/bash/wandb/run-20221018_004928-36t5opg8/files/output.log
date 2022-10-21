@@ -1,0 +1,56 @@
+                                                                                                                                                  [WARNING|logging.py:281] 2022-10-18 00:49:33,259 >> You're using a DebertaV2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+[INFO|trainer.py:2106] 2022-10-18 00:49:34,258 >> Didn't manage to set back the RNG states of the GPU because of the following error::00<?, ?it/s]
+ tuple index out of range
+This won't yield the same results as if the training had not been interrupted.
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:745: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  attention_scores = torch.bmm(query_layer, key_layer.transpose(-1, -2)) / torch.tensor(
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:829: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += c2p_att / torch.tensor(scale, dtype=c2p_att.dtype)
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/models/deberta_v2/modeling_deberta_v2.py:852: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  score += p2c_att / torch.tensor(scale, dtype=p2c_att.dtype)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO|configuration_utils.py:442] 2022-10-18 00:50:26,852 >> Configuration saved in ../tmp/ner_deberta/checkpoint-3000/config.json4:56,  7.66it/s]
+{'loss': 0.0256, 'learning_rate': 2.152619589977221e-05, 'epoch': 1.71}
+[INFO|modeling_utils.py:1583] 2022-10-18 00:50:27,757 >> Model weights saved in ../tmp/ner_deberta/checkpoint-3000/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-18 00:50:27,758 >> tokenizer config file saved in ../tmp/ner_deberta/checkpoint-3000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-18 00:50:27,759 >> Special tokens file saved in ../tmp/ner_deberta/checkpoint-3000/special_tokens_map.json
+Traceback (most recent call last):
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/serialization.py", line 372, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/serialization.py", line 491, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "../source/token-classification.py", line 630, in <module>
+    main()
+  File "../source/token-classification.py", line 561, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1521, in train
+    return inner_training_loop(
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1840, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 2069, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 2175, in _save_checkpoint
+    torch.save(self.optimizer.state_dict(), os.path.join(output_dir, OPTIMIZER_NAME))
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/serialization.py", line 373, in save
+    return
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/serialization.py", line 259, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:274] . unexpected pos 271147904 vs 271147792

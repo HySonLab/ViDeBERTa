@@ -1,0 +1,251 @@
+
+  0%|                                                                                                                    | 0/2634 [00:00<?, ?it/s][WARNING|logging.py:281] 2022-10-17 16:37:06,523 >> You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 19%|████████████████████                                                                                      | 500/2634 [01:15<07:37,  4.67it/s][INFO|trainer.py:2669] 2022-10-17 16:38:22,079 >> Saving model checkpoint to ../tmp/ner/checkpoint-500
+[INFO|configuration_utils.py:442] 2022-10-17 16:38:22,080 >> Configuration saved in ../tmp/ner/checkpoint-500/config.json
+{'loss': 0.1276, 'learning_rate': 4.050873196659074e-05, 'epoch': 0.57}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:38:23,007 >> Model weights saved in ../tmp/ner/checkpoint-500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:38:23,009 >> tokenizer config file saved in ../tmp/ner/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:38:23,009 >> Special tokens file saved in ../tmp/ner/checkpoint-500/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 38%|███████████████████████████████████████▊                                                                 | 1000/2634 [02:25<07:32,  3.61it/s][INFO|trainer.py:2669] 2022-10-17 16:39:32,335 >> Saving model checkpoint to ../tmp/ner/checkpoint-1000
+[INFO|configuration_utils.py:442] 2022-10-17 16:39:32,336 >> Configuration saved in ../tmp/ner/checkpoint-1000/config.json
+{'loss': 0.055, 'learning_rate': 3.1017463933181475e-05, 'epoch': 1.14}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:39:33,303 >> Model weights saved in ../tmp/ner/checkpoint-1000/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:39:33,304 >> tokenizer config file saved in ../tmp/ner/checkpoint-1000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:39:33,304 >> Special tokens file saved in ../tmp/ner/checkpoint-1000/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 57%|███████████████████████████████████████████████████████████▊                                             | 1500/2634 [03:36<05:05,  3.71it/s][INFO|trainer.py:2669] 2022-10-17 16:40:42,581 >> Saving model checkpoint to ../tmp/ner/checkpoint-1500
+[INFO|configuration_utils.py:442] 2022-10-17 16:40:42,582 >> Configuration saved in ../tmp/ner/checkpoint-1500/config.json
+{'loss': 0.0277, 'learning_rate': 2.152619589977221e-05, 'epoch': 1.71}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:40:43,869 >> Model weights saved in ../tmp/ner/checkpoint-1500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:40:43,871 >> tokenizer config file saved in ../tmp/ner/checkpoint-1500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:40:43,872 >> Special tokens file saved in ../tmp/ner/checkpoint-1500/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 76%|███████████████████████████████████████████████████████████████████████████████▋                         | 2000/2634 [04:45<01:57,  5.38it/s][INFO|trainer.py:2669] 2022-10-17 16:41:52,315 >> Saving model checkpoint to ../tmp/ner/checkpoint-2000
+[INFO|configuration_utils.py:442] 2022-10-17 16:41:52,316 >> Configuration saved in ../tmp/ner/checkpoint-2000/config.json
+{'loss': 0.0193, 'learning_rate': 1.2034927866362947e-05, 'epoch': 2.28}
+[INFO|modeling_utils.py:1583] 2022-10-17 16:41:53,311 >> Model weights saved in ../tmp/ner/checkpoint-2000/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:41:53,312 >> tokenizer config file saved in ../tmp/ner/checkpoint-2000/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:41:53,313 >> Special tokens file saved in ../tmp/ner/checkpoint-2000/special_tokens_map.json
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████▋     | 2500/2634 [05:55<00:25,  5.20it/s][INFO|trainer.py:2669] 2022-10-17 16:43:02,153 >> Saving model checkpoint to ../tmp/ner/checkpoint-2500
+[INFO|configuration_utils.py:442] 2022-10-17 16:43:02,154 >> Configuration saved in ../tmp/ner/checkpoint-2500/config.json
+[INFO|modeling_utils.py:1583] 2022-10-17 16:43:02,930 >> Model weights saved in ../tmp/ner/checkpoint-2500/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:43:02,931 >> tokenizer config file saved in ../tmp/ner/checkpoint-2500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:43:02,932 >> Special tokens file saved in ../tmp/ner/checkpoint-2500/special_tokens_map.json
+{'loss': 0.0109, 'learning_rate': 2.5436598329536827e-06, 'epoch': 2.85}
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 2634/2634 [06:16<00:00,  7.55it/s][INFO|trainer.py:1873] 2022-10-17 16:43:22,850 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████| 2634/2634 [06:16<00:00,  7.00it/s]
+[INFO|trainer.py:2669] 2022-10-17 16:43:22,857 >> Saving model checkpoint to ../tmp/ner
+[INFO|configuration_utils.py:442] 2022-10-17 16:43:22,858 >> Configuration saved in ../tmp/ner/config.json
+{'train_runtime': 387.6365, 'train_samples_per_second': 108.666, 'train_steps_per_second': 6.795, 'train_loss': 0.046239771395808565, 'epoch': 3.0}
+***** train metrics *****
+  epoch                    =        3.0
+  train_loss               =     0.0462
+  train_runtime            = 0:06:27.63
+  train_samples            =      14041
+  train_samples_per_second =    108.666
+  train_steps_per_second   =      6.795
+10/17/2022 16:43:23 - INFO - __main__ - *** Evaluate ***
+[INFO|modeling_utils.py:1583] 2022-10-17 16:43:23,850 >> Model weights saved in ../tmp/ner/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2123] 2022-10-17 16:43:23,851 >> tokenizer config file saved in ../tmp/ner/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2130] 2022-10-17 16:43:23,851 >> Special tokens file saved in ../tmp/ner/special_tokens_map.json
+[INFO|trainer.py:744] 2022-10-17 16:43:23,905 >> The following columns in the evaluation set don't have a corresponding argument in `BertForTokenClassification.forward` and have been ignored: tokens, id, chunk_tags, ner_tags, pos_tags. If tokens, id, chunk_tags, ner_tags, pos_tags are not expected by `BertForTokenClassification.forward`,  you can safely ignore this message.
+[INFO|trainer.py:2920] 2022-10-17 16:43:23,908 >> ***** Running Evaluation *****
+[INFO|trainer.py:2922] 2022-10-17 16:43:23,908 >>   Num examples = 3250
+[INFO|trainer.py:2925] 2022-10-17 16:43:23,909 >>   Batch size = 16
+
+
+
+
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 204/204 [00:11<00:00, 18.25it/s]
+10/17/2022 16:43:35 - INFO - datasets.metric - Removing /home/khuongnd6/.cache/huggingface/metrics/seqeval/default/default_experiment-1-0.arrow
+***** eval metrics *****
+  epoch                   =        3.0
+  eval_accuracy           =     0.9896
+  eval_f1                 =      0.948
+  eval_loss               =     0.0462
+  eval_precision          =     0.9442
+  eval_recall             =     0.9519
+  eval_runtime            = 0:00:11.22
+  eval_samples            =       3250
+  eval_samples_per_second =    289.509
+  eval_steps_per_second   =     18.172

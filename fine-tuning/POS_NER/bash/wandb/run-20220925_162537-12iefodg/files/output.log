@@ -1,0 +1,24 @@
+
+  0%|                                                                                                                                                                                      | 0/2634 [00:00<?, ?it/s]/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:65: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+
+
+
+
+
+  3%|████▋                                                                                                                                                                        | 72/2634 [00:20<05:47,  7.37it/s]Traceback (most recent call last):
+  File "../source/token-classification.py", line 629, in <module>
+    main()
+  File "../source/token-classification.py", line 560, in main
+    train_result = trainer.train(resume_from_checkpoint=checkpoint)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1414, in train
+    return inner_training_loop(
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/trainer.py", line 1723, in _inner_training_loop
+    self.optimizer.step()
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/torch/optim/optimizer.py", line 89, in wrapper
+    return func(*args, **kwargs)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/transformers/optimization.py", line 360, in step
+    exp_avg.mul_(beta1).add_(grad, alpha=(1.0 - beta1))
+KeyboardInterrupt

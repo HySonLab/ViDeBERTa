@@ -1,0 +1,102 @@
+diff --git a/pre-training/bash/pre_tokenizer.sh b/pre-training/bash/pre_tokenizer.sh
+index 3659d16..c6f4bc3 100644
+--- a/pre-training/bash/pre_tokenizer.sh
++++ b/pre-training/bash/pre_tokenizer.sh
+@@ -1,4 +1,4 @@
+-python ../source/pre_tokenizer.py \
+-    --cache_dir ../cache/dataset \
+-    --source_file ../dataset/cc100_1e4.txt \
+-    --destination_dir ../dataset/segment_cc100_1e4
++CUDA_VISIBLE_DEVICES=0 python ../source/pre_tokenizer.py \
++    --cache_dir ../cache/dataset/segment \
++    --source_file /media/data/huypn10/Vietnamese_Pretrained_Model/fine-tuning/dataset/ner \
++    --destination_dir ../dataset/segment_vi_cc100
+diff --git a/pre-training/bash/xz_to_txt.sh b/pre-training/bash/xz_to_txt.sh
+index b0cfa47..002a128 100644
+--- a/pre-training/bash/xz_to_txt.sh
++++ b/pre-training/bash/xz_to_txt.sh
+@@ -1,3 +1,3 @@
+ python ../source/xz_to_txt.py \
+-    --source_file ../dataset/vi.txt.xz \
+-    --destination_file ../dataset/cc100_1e4.txt
++    --source_file ../datasets/vi.txt.xz \
++    --destination_file ../datasets/vi_cc100.txt
+diff --git a/pre-training/source/pre_tokenizer.py b/pre-training/source/pre_tokenizer.py
+index 7dad96f..ac36400 100644
+--- a/pre-training/source/pre_tokenizer.py
++++ b/pre-training/source/pre_tokenizer.py
+@@ -17,25 +17,31 @@ if __name__ == '__main__':
+     data_path = args.source_file
+     start_time = time.perf_counter()
+ 
+-    dataset = datasets.load_dataset("text", data_files=data_path, cache_dir=args.cache_dir)
++    # dataset = datasets.load_dataset("text", data_files=data_path, cache_dir=args.cache_dir)
++    # dataset['validation'] = datasets.load_dataset("text",
++    #                                               data_files=data_path,
++    #                                               split=f"train[:5%]",
++    #                                               cache_dir=args.cache_dir)
++    # dataset['test'] = datasets.load_dataset("text",
++    #                                         data_files=data_path,
++    #                                         split=f"train[5%:10%]",
++    #                                         cache_dir=args.cache_dir)
++    # dataset['train'] = datasets.load_dataset("text",
++    #                                          data_files=data_path,
++    #                                          split=f"train[10%:]",
++    #                                          cache_dir=args.cache_dir)
++    dataset = datasets.load_dataset("text",
++                                    data_files=data_path+'/train.txt')
+     dataset['validation'] = datasets.load_dataset("text",
+-                                                  data_files=data_path,
+-                                                  split=f"train[:5%]",
+-                                                  cache_dir=args.cache_dir)
++                                    data_files=data_path+'/val.txt')['train']
+     dataset['test'] = datasets.load_dataset("text",
+-                                            data_files=data_path,
+-                                            split=f"train[5%:10%]",
+-                                            cache_dir=args.cache_dir)
+-    dataset['train'] = datasets.load_dataset("text",
+-                                             data_files=data_path,
+-                                             split=f"train[10%:]",
+-                                             cache_dir=args.cache_dir)
++                                    data_files=data_path+'/test.txt')['train']
+ 
+     def tokenize_function(examples):
+         examples["text"] = [ViTokenizer.tokenize(line) for line in examples["text"]]
+         return examples
+ 
+-    dataset = dataset.map(tokenize_function, batched=True, num_proc=16)
++    dataset = dataset.map(tokenize_function, batched=True)
+     dataset.save_to_disk(args.destination_dir)
+     print(dataset)
+     finish_time = time.perf_counter()
+diff --git a/pre-training/source/xz_to_txt.py b/pre-training/source/xz_to_txt.py
+index 46d7674..c2fdb02 100644
+--- a/pre-training/source/xz_to_txt.py
++++ b/pre-training/source/xz_to_txt.py
+@@ -1,6 +1,6 @@
+ import lzma
+ import argparse
+-
++import lzma
+ def parse_args():
+     parser = argparse.ArgumentParser()
+     parser.add_argument('--source_file', type=str, default=None, help='Source file')
+@@ -10,7 +10,15 @@ def parse_args():
+ 
+ if __name__ == '__main__':
+     args = parse_args()
+-    with open(args.source_file, "wt") as fout:
+-        with lzma.open(args.destination_file, "rt") as fin:
++
++    cnt = 0
++    # lzma._BUFFER_SIZE = 1023
++    with open(args.destination_file, mode = "wt") as fout:
++        with lzma.open(args.source_file, mode = "rt") as fin:
+             for line in fin:
+-                fout.write(line)
++                cnt+=1
++                if len(line) > 0:
++                    fout.write(line+'\n')
++                if(cnt%1e8 == 0):
++                    print(cnt)
++                    print(line)

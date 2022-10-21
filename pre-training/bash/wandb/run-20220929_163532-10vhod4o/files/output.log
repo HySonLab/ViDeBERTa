@@ -1,0 +1,156 @@
+
+09/29/2022 16:35:38|INFO|rtd|00| Namespace(accumulative_update=1, adam_beta1=0.9, adam_beta2=0.999, cls_drop_out=None, data_dir='/media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4', debug=False, decoupled_training=True, discriminator_learning_rate=-1, do_eval=False, do_predict=False, do_train=True, dump_interval=10000, epsilon=1e-06, eval_batch_size=32, fp16=True, init_discriminator=None, init_generator=None, init_model=None, learning_rate=0.0001, local_rank=-1, lookahead_alpha=0.5, lookahead_k=-1, loss_scale=16384, lr_schedule='warmup_linear', lr_schedule_ends=0, master_ip=None, master_port=None, max_grad_norm=1, max_seq_length=512, model_config='../config/deberta-v3-xsmall.json', num_train_epochs=1.0, num_training_steps=100, opt_type='adam', output_dir='/tmp/ttonly/deberta-base/', pre_trained=None, predict_batch_size=32, rank=-1, rtd_lambda=10, scale_steps=250, seed=1234, tag='deberta-base', task_dir=None, task_name='rtd', tokenizer_dir='../tokenizer/spm_2e8', train_batch_size=16, vat_init_perturbation=0.01, vat_lambda=0, vat_learning_rate=0.0001, vat_loss_fn='symmetric-kl', vocab_path=None, vocab_type='spm', warmup_proportion=1.0, weight_decay=0.01, with_radam=False, workers=0, world_size=-1)
+09292022 16:35:39|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-b3dd991f81cf6416.arrow
+09292022 16:35:39|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-66767633d546bd51.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-76bc4125d4f89a1c.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-85067e37daf341b1.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-6ab4dc2bc18cc43b.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-b5c7dc1ca1b6b5fc.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-4c5ea7975eb91066.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-6206885dc48d05d2.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-db5bf11310bf532e.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-c4e4947d5c060904.arrow
+09292022 16:35:40|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-e2dd6ce3f2ab99dd.arrow
+09292022 16:35:41|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-488d1aa32481281e.arrow
+09292022 16:35:41|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-39d07bbb54d5b484.arrow
+09292022 16:35:41|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-051b06760275d12b.arrow
+09292022 16:35:41|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-b40b6c0855a555ea.arrow
+09292022 16:35:41|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-46047f1d9a0271c4.arrow
+09292022 16:35:42|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-b33f5deeb8e4cd6b.arrow
+09292022 16:35:42|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-5645fb5d6a26060e.arrow
+09292022 16:35:42|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-043366df70270557.arrow
+09292022 16:35:42|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-21f03693c6a89729.arrow
+09292022 16:35:42|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-04654d0cceb80f9b.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-b6f908c863d50849.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-2096014d81f9792a.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-d030af694a69a49b.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-368ac62dcf4ad07c.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-ef75a500bf6ae329.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-fd472dfb7fb3ba92.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-90a50b9f6fb8b34d.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-1f392f2733438450.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-8d8935fac05cfae6.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-714734abc338b8f6.arrow
+09292022 16:35:43|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/validation/cache-044d2bda8d5ed359.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-38060c9107dc0e67.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-aba915a41bda20b3.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-4977fdccd720640c.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-66a65b4a45f45c3c.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-f37f901fba019ce2.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-91e02ac324c7426a.arrow
+09292022 16:35:45|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-ecbaeedbf526dcd2.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-5bf51a52ba049628.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-1570dd7e3c5f366a.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-92f96916f23396f8.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-2cd5ddfba48cd79a.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-d170a026ae35890a.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-58bf5bf4da557401.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-9b03ab1208a00282.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-cce193f78b52fb99.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/test/cache-40ae796bd85df99f.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-4fd37a544fbcc9f8.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-6c701460ed40ffc2.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-a450fff7149ab616.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-b10f1da2739b7413.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-5d24b3456d0ac803.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-1dd983eb169ceeb6.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-84f1fa4977735577.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-2fcb68147ac0b455.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-e64497fd5de77a14.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-be5ab7f16249c949.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-889851ee2b31d96e.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-ee763ffdcca5f58d.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-394021186c4b841c.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-7f1e7593f862fad4.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-3bb903b1eda8b694.arrow
+09292022 16:35:46|WARNING|datasets.arrow_dataset| Loading cached processed dataset at /media/data/huypn10/Vietnamese%20Pretrained%20Model/pre-training/dataset/segment_cc100_1e4/train/cache-d5480db49849f760.arrow
+09/29/2022 16:35:47|INFO|rtd|00| Total corpus examples: 500
+09/29/2022 16:35:47|INFO|rtd|00|   Evaluation batch size = 32
+09/29/2022 16:35:47|INFO|rtd|00| Total corpus examples: 694
+09/29/2022 16:35:50|INFO|rtd|00| Total parameters: 131459457
+09/29/2022 16:35:50|INFO|rtd|00| Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "discriminator": {
+    "attention_head_size": 64,
+    "attention_probs_dropout_prob": 0.1,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 384,
+    "initializer_range": 0.02,
+    "intermediate_size": 1536,
+    "layer_norm_eps": 1e-07,
+    "max_position_embeddings": 512,
+    "max_relative_positions": -1,
+    "norm_rel_ebd": "layer_norm",
+    "num_attention_heads": 6,
+    "num_hidden_layers": 12,
+    "pos_att_type": "p2c|c2p",
+    "position_biased_input": false,
+    "position_buckets": 256,
+    "relative_attention": true,
+    "share_att_key": true,
+    "type_vocab_size": 0,
+    "vocab_size": 128000
+  },
+  "embedding_sharing": "gdes",
+  "generator": {
+    "attention_head_size": 64,
+    "attention_probs_dropout_prob": 0.1,
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 384,
+    "initializer_range": 0.02,
+    "intermediate_size": 1536,
+    "layer_norm_eps": 1e-07,
+    "max_position_embeddings": 512,
+    "max_relative_positions": -1,
+    "norm_rel_ebd": "layer_norm",
+    "num_attention_heads": 6,
+    "num_hidden_layers": 6,
+    "pos_att_type": "p2c|c2p",
+    "position_biased_input": false,
+    "position_buckets": 256,
+    "relative_attention": true,
+    "share_att_key": true,
+    "type_vocab_size": 0,
+    "vocab_size": 128000
+  },
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-07,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "padding_idx": 0,
+  "type_vocab_size": 0,
+  "vocab_size": -1
+}
+09/29/2022 16:35:50|INFO|rtd|00| device=cuda, n_gpu=1, distributed training=False, world_size=1
+09/29/2022 16:35:56|INFO|rtd|00|   Training batch size = 16
+09/29/2022 16:35:56|INFO|rtd|00|   Num steps = 100
+/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/DeBERTa/optims/xadam.py:42: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at  ../torch/csrc/utils/python_arg_parser.cpp:1005.)
+  next_m.mul_(beta1).add_(beta1_, grad)
+09/29/2022 16:36:44|INFO|rtd|00| [D][100.0%][-0.00h] Steps=100, loss=3.6884736013412476, examples=1600, loss_scale=16384.0, 48.5s
+09/29/2022 16:36:44|INFO|rtd|00| [G][100.0%][-0.00h] Steps=100, loss=7.488935751914978, examples=1600, loss_scale=16384.0, 48.3s
+Evaluating: 000100-100: 100%|███████████████████| 16/16 [00:02<00:00,  7.62it/s]
+09/29/2022 16:36:47|INFO|rtd|00| ***** Eval results-dev-000100-100 *****
+09/29/2022 16:36:47|INFO|rtd|00|   accuracy = 0.15158825894652192
+09/29/2022 16:36:47|INFO|rtd|00|   eval_loss = 7.74492883682251
+09/29/2022 16:36:47|INFO|rtd|00|   eval_metric = 0.15158825894652192
+09/29/2022 16:36:47|INFO|rtd|00|   eval_samples = 2487
+09/29/2022 16:36:47|INFO|rtd|00|   perplexity = 2309.8291015625
+09/29/2022 16:36:47|INFO|rtd|00| Best metric: 0.15158825894652192@100
+Traceback (most recent call last):
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/media/data/huypn10/linear-transformer/lib/python3.8/site-packages/DeBERTa/apps/run.py", line 450, in <module>
+    wandb.init(project="vi-deberta", entity="aehus")
+NameError: name 'wandb' is not defined

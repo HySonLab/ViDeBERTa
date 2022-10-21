@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.4.0-125-generic-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-09-25T09:32:06.110625",
+    "startedAt": "2022-09-25T09:32:04.439146",
+    "docker": null,
+    "gpu": "NVIDIA A10",
+    "gpu_count": 2,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "bert-base-uncased",
+        "--dataset_name",
+        "conll2003",
+        "--output_dir",
+        "/tmp/test-ner",
+        "--do_train",
+        "--do_eval",
+        "--overwrite_output_dir",
+        "1"
+    ],
+    "state": "running",
+    "program": "../source/token-classification.py",
+    "codePath": "fine-tuning/source/token-classification.py",
+    "git": {
+        "remote": "https://github.com/AEHUSPHAM/Vietnamese_Pretrained_Model.git",
+        "commit": "114004bb7a0e810c612a5eb7ce08a7e9494a3c88"
+    },
+    "email": "vietcuong.ip@gmail.com",
+    "root": "/media/data/huypn10/Vietnamese_Pretrained_Model",
+    "host": "TungHT18",
+    "username": "khuongnd6",
+    "executable": "/media/data/huypn10/linear-transformer/bin/python3"
+}

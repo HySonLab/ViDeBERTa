@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "context": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer_start_idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "answer_word_start_idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "answer_word_end_idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

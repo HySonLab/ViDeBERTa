@@ -1,0 +1,21 @@
+{
+  "_data_files": [
+    {
+      "filename": "dataset.arrow"
+    }
+  ],
+  "_fingerprint": "26393d2b0d750382",
+  "_format_columns": [
+    "context",
+    "question",
+    "answer_text",
+    "answer_start_idx",
+    "answer_word_start_idx",
+    "answer_word_end_idx"
+  ],
+  "_format_kwargs": {},
+  "_format_type": null,
+  "_indexes": {},
+  "_output_all_columns": false,
+  "_split": null
+}
