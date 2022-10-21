@@ -1,11 +1,10 @@
 # ViDeBERTa: A powerful pre-trained language model for Vietnamese
 
-Contributors:
+## Contributors
 * Tran Cong Dao
 * Pham Nhut Huy
 * Nguyen Tuan Anh
 * Hy Truong Son
-
 
 # Pre-training
 ## Code architecture
