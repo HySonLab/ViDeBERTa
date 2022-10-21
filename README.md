@@ -9,7 +9,6 @@
 1. [Pre-training](#pretraining)
 2. [Model](#videberta)
 3. [Fine-tuning](#finetuning)
---4. [Usage](#vncorenlp)
 
 ## <a name="pretraining"></a> Pre-training
 ## Code architecture
