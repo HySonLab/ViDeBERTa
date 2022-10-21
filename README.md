@@ -26,3 +26,9 @@ Contributors:
 - Load datasets
 - Load tokenizers
 - Pre-train DeBERTa-v3
+
+# Fine-tuning
+## Code architecture
+1. POS tagging and NER (POS_NER)
+2. Question Answering (QA and QA2)
+3. Open-domain Question Answering (OPQA)
