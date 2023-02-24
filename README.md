@@ -6,7 +6,8 @@ https://arxiv.org/pdf/2301.10439.pdf
 * Tran Cong Dao
 * Pham Nhut Huy
 * Nguyen Tuan Anh
-* Hy Truong Son
+* Hy Truong Son (Correspondent / PI)
+
 ## Main components
 1. [Pre-training](#pretraining)
 2. [Model](#videberta)
