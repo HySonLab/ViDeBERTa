@@ -1,6 +1,6 @@
 # ViDeBERTa: A powerful pre-trained language model for Vietnamese, EACL 2023
 
-https://arxiv.org/pdf/2301.10439.pdf
+Paper: https://arxiv.org/pdf/2301.10439.pdf
 
 ## Contributors
 * Tran Cong Dao
