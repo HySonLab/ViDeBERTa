@@ -2,6 +2,8 @@
 
 Paper: https://aclanthology.org/2023.findings-eacl.79.pdf
 
+![ViDeBERTa](ViDeBERTa.png)
+
 ## Contributors
 * Tran Cong Dao
 * Pham Nhut Huy
